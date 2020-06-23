@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Response</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="js/datpicker.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="breadcumb">
+            <span>Dental Office</span>
+            <span> <img src="images/icons/right-arrow.svg" alt=""> </span>
+            <span>Eligibilty</span>
+            <span> <img src="images/icons/right-arrow.svg" alt=""> </span>
+            <span>My Eligibility Dashboard</span>
+        </div>
+        <div class="help">
+            <span> <img src="images/icons/help.svg" alt=""> </span>
+            <span>Help</span>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <a href="" class="logo">
+                <span class="logo-img"></span>
+            </a>
+            <nav class="center-heading">
+                <div class="head-text">
+                    <h1>Eligibility Response</h1>
+                </div>
+                <p>Response Generated: 1/24/2020 10:22:50 am CT</p>
+            </nav>
+            <div class="flex-grow-1 text-right">
+                <p>
+                    <div class="breadcumb header-breadcumb">
+                        <span>Return Request</span>
+                        <span> <img src="images/icons/right-arrow.svg" alt=""> </span>
+                        <span>View Raw X12 File</span>
+                        <span> <img src="images/icons/right-arrow.svg" alt=""> </span>
+                        <span>
+                            <button type="submit" class="btn btn-primary doc-btn">Save PDF <img src="images/icons/doc.svg" class="" alt=""></button>
+                        </span>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu menu-border">
+        <div class="menu-item">
+            <p> <img src="images/icons/dashboard.svg" alt="">Dashboard</p>
+        </div>
+        <div class="menu-item text-blue">
+            <p> <img src="images/icons/make-request-blue.svg" alt="">Make a Request</p>
+        </div>
+        <div class="menu-item">
+            <p> <img src="images/icons/batches.svg" alt="">Batches</p>
+        </div>
+        <div class="menu-item">
+            <p> <img src="images/icons/history.svg" alt="">Request History</p>
+        </div>
+    </div>
+
+
+
+    <div class="page">
+        <div class="wrap">
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="#">Save View as Favorite <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                </div>
+                <div class="sidebar-menu">
+                    <a href="#">Restore Favorite View <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                </div>
+                <div class="menu-grouped sidebar-menu">
+                    <h4>General Breakdown</h4>
+                    <p>Displaying 1 of 3 sections</p>
+                    <a href="#">Edit Display <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <a href="#" class="ml-3">Show All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <div class="hide-btn mt-2">
+                        <a href="#">Hide All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="menu-grouped sidebar-menu">
+                    <h4>Endo Breakdown</h4>
+                    <p>Displaying 0 of 3 sections</p>
+                    <a href="#">Edit Display <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <a href="#" class="ml-3">Show All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <div class="hide-btn mt-2">
+                        <a href="#">Hide All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="menu-grouped sidebar-menu">
+                    <h4>Ortho Breakdown</h4>
+                    <p>Displaying 5 of 5 sections</p>
+                    <a href="#">Edit Display <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <a href="#" class="ml-3">Show All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <div class="hide-btn mt-2">
+                        <a href="#">Hide All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="menu-grouped sidebar-menu">
+                    <h4>Oral Surgery Breakdown</h4>
+                    <p>Displaying 0 of 2 sections</p>
+                    <a href="#">Edit Display <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <a href="#" class="ml-3">Show All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <div class="hide-btn mt-2">
+                        <a href="#">Hide All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="menu-grouped sidebar-menu">
+                    <h4>Perio Breakdown</h4>
+                    <p>Displaying 0 of 0 sections</p>
+                    <a href="#">Edit Display <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <a href="#" class="ml-3">Show All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    <div class="hide-btn mt-2">
+                        <a href="#">Hide All <img src="images/icons/right-arrow-block.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="content">
+                <div class="shrinked-wrap">
+                    <div class="row table-section">
+                        <div class="col-md-6">
+                            <div class="table-section-1">
+                                <div class="your-request">
+                                    <button class="btn collapsed-btn">
+                                        <span class="bar-text">Your Request</span>
+                                    </button>
+                                    <div class="info col-md-12">
+                                        <table class="info-table tB">
+                                            <tr>
+                                                <td class="rB">Payer</td>
+                                                <td>AARP Dental Insurance</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">Provider ID (NPI)</td>
+                                                <td>1588819635 – Dental Office</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">Service Dates</td>
+                                                <td>1/24/2020 – 12/31/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">Last Name</td>
+                                                <td>Test</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">First Name</td>
+                                                <td>Chuck</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">Member ID</td>
+                                                <td>Aetna</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">DOB</td>
+                                                <td>7/6/1973</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="patient-demographic">
+                                    <button class="btn collapsed-btn">
+                                        <span class="bar-text">Patient Demographics</span>
+                                    </button>
+                                    <div class="info col-md-12">
+                                        <table class="info-table tB">
+                                            <tr>
+                                                <td class="rB">Address</td>
+                                                <td>225 Main Street, Centerville, PA 17111</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rB">Gender</td>
+                                                <td>F</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-section-2">
+                                <div class="clearfix update-request">
+                                    <div class="update-request-label float-left">
+                                        <div class="request-label-1">
+                                            Eligibility State:
+                                        </div>
+                                        <div class="request-label-2">
+                                            Owner:
+                                        </div>
+                                        <div class="request-label-3">
+                                            Follow-up Status:
+                                        </div>
+                                        <div class="request-label-4">
+                                            Follow-up Date:
+                                        </div>
+                                        <div class="request-label-5">
+                                            Add request to Batch
+                                        </div>
+                                    </div>
+                                    <div class="update-request-form float-right">
+                                        <form class="form">
+                                            <p><img src="images/icons/review.svg" alt=""> Review: Other Plan Detected</p>
+
+                                            <div class="check-input-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" checked="checked" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                            Display on Dashboard
+                                                        </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" checked="checked" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                            Currently Unreviewed
+                                                        </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-input-gap">
+                                                <select class="form-control filter-inputs">
+                                                    <option>Andrew, James</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="check-input-group">
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input color-check-gap" type="checkbox" checked="checked" value="" id="defaultCheck1">
+                                                    <span class="color-box color-check-gap">
+                                                        <label for="color-box" class="color-box black-box"></label>
+                                                    </span>
+                                                    <label class="form-check-label color-check-gap" for="defaultCheck1">
+                                                    Prior Auth Required
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input color-check-gap" type="checkbox" checked="checked" value="" id="defaultCheck1">
+                                                    <span class="color-box color-check-gap">
+                                                        <label for="color-box" class="color-box yellow-box"></label>
+                                                    </span>
+                                                    <label class="form-check-label color-check-gap" for="defaultCheck1">
+                                                        Denial Management
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input color-check-gap" type="checkbox" checked="checked" value="" id="defaultCheck1">
+                                                    <span class="color-box color-check-gap">
+                                                        <label for="color-box" class="color-box green-box"></label>
+                                                    </span>
+                                                    <label class="form-check-label color-check-gap" for="defaultCheck1">
+                                                        POS
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input color-check-gap" type="checkbox" checked="checked" value="" id="defaultCheck1">
+                                                    <span class="color-box color-check-gap">
+                                                        <label for="color-box" class="color-box lightmaroon-box"></label>
+                                                    </span>
+                                                    <label class="form-check-label color-check-gap" for="defaultCheck1">
+                                                        Self Pay Financial Counseling
+                                                    </label>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- <div class="col-auto">
+                                                <input class="form-control" id="datepicker" placeholder="mm/dd/yy" />
+                                            </div> -->
+
+                                            <div class="form-input-gap">
+                                                <input class="form-control filter-inputs" type="date" placeholder="mm/dd/yy" id="example-date-input">
+                                            </div>
+
+                                            <div class="form-input-gap">
+                                                <select class="form-control filter-inputs">
+                                                    <option>Choose a Batch</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary update-request-btn">Update Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="table-section-3">
+                                <button class="btn btn-block collapsed-btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="clearfix">
+                                        <span class="bar-text float-left">2 User Note(s)</span>
+                                        <span class="float-right pr-3 collapsed-btn-icon"><img src="images/icons/up-arrow-blocked.svg" alt=""></span>
+                                    </span>
+                                </button>
+                                <div class="collapse user-notes p-4" id="collapseExample">
+                                    <div class="clearfix user-notes-header">
+                                        <div class="float-left">
+                                            <h4>User Notes</h4>
+                                        </div>
+                                        <div class="float-right">
+                                            <button type="submit" class="btn add-note-btn">Add Note <img src="images/icons/plus-circled.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <table class="table user-notes-table">
+                                            <thead>
+                                                <tr>
+                                                    <td>Created Date</td>
+                                                    <td>Added by</td>
+                                                    <td>Note</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1/24/2020 10:37 AM</td>
+                                                    <td>Team Member</td>
+                                                    <td>Updated owner to James Andrew</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1/24/2020 10:37 AM</td>
+                                                    <td>Team Member</td>
+                                                    <td>Updated owner to James Andrew</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
+
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
+
+</html>

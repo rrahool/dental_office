@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" /> -->
 
     <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/datpicker.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <div class="top-bar">
+    <div class="top-bar col-md-12">
         <div class="breadcumb">
             <span>Dental Office</span>
             <span> <img src="images/icons/right-arrow.svg" alt=""> </span>
@@ -35,14 +36,15 @@
             <span>Help</span>
         </div>
     </div>
+
     <header>
-        <div class="header d-flex justify-content-between">
+        <div class="header col-md-12">
             <a href="" class="logo">
                 <span class="logo-img"></span>
             </a>
             <nav>
                 <div class="head-text">
-                    <p>My Dashboard</p>
+                    <h1>My Dashboard</h1>
                 </div>
             </nav>
             <div>
@@ -51,8 +53,8 @@
         </div>
     </header>
     <div class="menu menu-border">
-        <div class="menu-item">
-            <p> <img src="images/icons/dashboard.svg" alt="">Dashboard</p>
+        <div class="menu-item text-blue">
+            <p> <img src="images/icons/dashboard-blue.svg" alt="">Dashboard</p>
         </div>
         <div class="menu-item">
             <p> <img src="images/icons/make-request.svg" alt="">Make a Request</p>
@@ -116,10 +118,10 @@
                                     <option>5</option>
                                 </select>
                             </div>
-                            <div class="col-auto input-with-label">
-                                <label for="filter-inputs-date" class="mt-1">DOB:</label>
-                                <input class="form-control filter-inputs-date" id="datepicker" placeholder="mm/dd/yy" />
+                            <div class="col-auto">
+                                <input class="date-picker" type="date" id="datepicker" value="mm/dd/yy">
                             </div>
+
                             <div class="col-auto">
                                 <button type="submit" class="btn btn-primary search-btn"><span>Search</span> <img src="images/icons/search.svg" class="mt-1" alt=""></button>
                             </div>
@@ -167,9 +169,11 @@
                     </form>
                 </div>
                 <div class="extra-filtering-item">
-                    <p>Configure Dashboard <img src="images/icons/right-arrow-block.svg" alt=""></p>
+                    <span class="extra-filtering-arrow">Configure Dashboard <img src="images/icons/right-arrow-block.svg" alt=""></span>
                 </div>
             </div>
+        </div>
+        <div class="wrap">
             <div class="data-table">
                 <table id="example" class="table table-bordered" style="width:100%">
                     <thead class="text-center">

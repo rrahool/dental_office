@@ -1,0 +1,1 @@
+var date = $('#datepicker').datepicker({ dateFormat: 'mm-dd-yy' }).val();
