@@ -874,9 +874,19 @@ div.content {
     background: #D35F5F;
 }
 
+.plain-text a{
+    text-decoration: none;
+}
+
+.text-default a{
+    color: #000;
+}
+
 .text-blue {
     color: #2D45BF;
 }
+
+
 
 
 /* Responsive CSS for different screen sizes */
